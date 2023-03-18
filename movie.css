@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #373b69;
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+}
+.find{
+    text-align: center;
+    /* padding: 1rem;
+    background-color: rgb(29, 29, 32);
+    margin: 0.2rem 35rem;
+    border-radius: 30px; */
+    color: rgb(246, 247, 249);
+    margin-bottom:-50px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 5px;
+}
+header{
+    background-color: #373b69;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+.search{
+    background-color: transparent;
+    border: 2px solid #222540;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+}
+.search::placeholder{
+    color: whitesmoke;
+    font-size: bold;
+}
+.search:focus{
+    background-color: #22254b   ;
+    outline: none;
+}
+
+.movie{
+    border-radius:3px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2); 
+    width: 300px;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+.movie img{
+    width: 100%;
+    height: 300px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie-info{
+
+    color: #ffffff;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1px;
+}
+.movie-info h3{
+    margin: 0;
+}
+.movie-info span{
+    
+    padding: 0.25rem 0.5rem;
+    background-color: #151835;
+    border-radius: 3px;
+}
+.movie-info span.green{
+   color: greenyellow;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+   color: red;
+}
+.overview{
+    background-color: #ffffff;
+    position: absolute;
+   max-height: 100%;
+   overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
+.overview h4{
+    margin: 1rem 0.3rem;
+}
